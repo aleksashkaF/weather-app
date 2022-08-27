@@ -74,3 +74,9 @@ a:hover {
   left: 100px;
   font-family: "Abel", sans-serif;
 }
+.footer {
+  font-family: "Abel", sans-serif;
+  width: auto;
+  display: block;
+  margin-left: 400px;
+}
