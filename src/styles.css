@@ -32,6 +32,7 @@
   font-size: 16px;
 }
 .location {
+  padding-top: 40px;
   font-size: 35px;
 }
 .current-forecast {
@@ -45,7 +46,7 @@
   height: 120px;
 }
 .current-temp-number {
-  font-size: 50px;
+  font-size: 80px;
 }
 .temp-unit {
   color: #d9b650;
@@ -54,26 +55,33 @@
 }
 
 .description {
-  font-size: 24px;
+  font-size: 28px;
 }
 .description:first-letter {
   text-transform: capitalize;
 }
-
+.week-forecast {
+  width: 600px;
+  position: relative;
+  left: 70px;
+  top: -200px;
+  font-size: 26px;
+  
+}
 .metrics {
   list-style-type: none;
   position: relative;
-  top: -250px;
+  top: -230px;
   padding-top: 20px;
-  right: 20px;
+  right: -230px;
   font-family: "Indie Flower", cursive;
   color: #d9b650;
-  font-size: 18px;
+  font-size: 20px;
 }
 .location-form {
   position: relative;
-  top: -150px;
-  left: -200px;
+  top: -200px;
+  left: -125px;
   font-family: "Indie Flower", cursive;
   color: #d9b650;
 }
@@ -84,7 +92,6 @@
   font-family: "Abel", sans-serif;
   width: auto;
   display: block;
-  margin-left: 400px;
-  
+  margin-left: 250px;
   font-size: 18px;
 }
