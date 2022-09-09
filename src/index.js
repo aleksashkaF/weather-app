@@ -82,14 +82,12 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#fullDate");
   let iconElement = document.querySelector("#icon");
-
   celsiusTemperature = response.data.main.temp;
-
   temperatureElement.innerHTML = `${Math.round(celsiusTemperature)}°`;
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
-  humidityElement.innerHTML = `${response.data.main.humidity}%`;
-  windElement.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
+  humidityElement.innerHTML = `${response.data.main.humidity} %`;
+  windElement.innerHTML = `${Math.round(response.data.wind.speed)} km/h`;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
@@ -117,12 +115,12 @@ form.addEventListener("submit", handleSubmit);
 
 function celsiusConvert() {
   let number = document.querySelector("#temp-number");
-  number.innerHTML = Math.round(celsiusTemperature);
+  number.innerHTML = `${Math.round(celsiusTemperature)}°`;
 }
 function fahrenheitConvert() {
   let number = document.querySelector("#temp-number");
   let temp = number.innerHTML;
-  number.innerHTML = Math.round((temp * 9) / 5 + 32);
+  number.innerHTML = `${Math.round((celsiusTemperature * 9) / 5 + 32)}°`;
 }
 
 let celsius = document.querySelector("#temp-c");
