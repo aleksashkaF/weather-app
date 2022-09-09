@@ -12,103 +12,75 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Abel&family=Cinzel:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Cinzel:wght@400;500;600;700&family=Dancing+Script:wght@700&family=Indie+Flower&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
-
     <div class="container">
         <div class="weather-app">
             <div class="today-forecast">
-                <h1 id="day">
-                    Saturday
-                </h1>
-                <div class="date" id="date">
-                    30.07.2022
+                <div class="current-date" id="fullDate">
+                    <h1 id="day">
+                    </h1>
+
+                    <div class="date" id="date">
+                    </div>
+
                 </div>
                 <div class="current-location">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span class="location" id="location">Utrecht</span>
+                    <span class="location" id="location"></span>
                 </div>
                 <div class="current-forecast">
-                    <i class="fa-solid fa-sun current-forecast-day-img"></i>
+                    <img id="icon" class="picture" src="http://openweathermap.org/img/wn/10d@2x.png"
+                        alt="weatherpicture" />
                     <div class="forecast-current-temp">
-                        <span id="temp-number">21</span>
-                        <span>°</span>
-                        <span><a href="#" id="temp-c">C</a></span>
-                        <span><a href="#" id="temp-f">F</a></span>
+                        <div><span class="current-temp-number" id="temp-number"></span>
+                            <span class="temp-unit"><a href="#" id="temp-c" style="text-decoration:none">C</a></span>
+                            <span class="temp-unit"><a href="#" id="temp-f" style="text-decoration:none">F</a></span>
+                        </div>
                     </div>
-
-                    <div class="description" id="description">Sunny</div>
+                    <div class="description" id="description"></div>
                 </div>
             </div>
-            <div class="row justify-content-center week-forecast">
-                <div class="col-md-auto day-forecast">
-                    <i class="fa-solid fa-sun forecast-day-img"></i>
-                    <div class="forecast-day">Sun</div>
-                    <div class="forecast-day-temp">23°C</div>
-                </div>
-                <div class="col-md-auto  day-forecast">
-                    <i class="fa-solid fa-cloud-sun forecast-day-img"></i>
-                    <div class="forecast-day">Mon</div>
-                    <div class="forecast-day-temp">21°C</div>
-                </div>
-                <div class="col-md-auto day-forecast">
-                    <i class="fa-solid fa-cloud-rain forecast-day-img"></i>
-                    <div class="forecast-day">Tue</div>
-                    <div class="forecast-day-temp">19°C</div>
-                </div>
-                <div class="col-md-auto day-forecast">
-                    <i class="fa-solid fa-cloud-rain forecast-day-img"></i>
-                    <div class="forecast-day">Wed</div>
-                    <div class="forecast-day-temp">18°C</div>
-                </div>
-                <div class="col-md-auto day-forecast">
-                    <i class="fa-solid fa-cloud-sun forecast-day-img"></i>
-                    <div class="forecast-day">Thu</div>
-                    <div class="forecast-day-temp">20°C</div>
-                </div>
+            <div class="week-forecast" id="forecast">
             </div>
-            <div class="row justify-content-center description">
-                <div class="col-md-auto">
-                    <ul class="metrics">
-
-                        <li>
-                            Humidity:
-                            <span class="current-metrics" id="humidity">
-                                54%
-                            </span>
-                        </li>
-                        <li>
-                            Wind:
-                            <span class="current-metrics" id="wind">
-                                6 km/h
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <form class="row justify-content-center location-form" id="location-form">
-                <div class="col-4">
-                    <input type="search" class="form-control form-control-sm" id="city-input"
-                        placeholder="Change location">
-                </div>
-                <div class="col-md-auto">
-
-                    <button type="submit" class="btn btn-light btn-sm">Search</button>
-                    <span class="col-md-auto">
-                        <button type="click" class="btn btn-light btn-sm my-location" id="my-location">My
-                            location</button>
-                    </span>
-                </div>
-            </form>
         </div>
+        <div class="row justify-content-center description">
+            <div class="col-md-auto">
+                <ul class="metrics">
+                    <li>
+                        Humidity:
+                        <span class="current-metrics" id="humidity">
+                        </span>
+                    </li>
+                    <li>
+                        Wind:
+                        <span class="current-metrics" id="wind">
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form class="row justify-content-center location-form" id="location-form">
+            <div class="col-4">
+                <input type="search" class="form-control form-control-sm" id="city-input" placeholder="Change location">
+            </div>
+            <div class="col-md-auto">
+                <button type="submit" class="btn btn-light btn-sm">Search</button>
+                <span class="col-md-auto">
+                    <button type="click" class="btn btn-light btn-sm my-location" id="my-location">My
+                        location</button>
+                </span>
+            </div>
+        </form>
+    </div>
     </div>
     </div>
     <div class="footer">
-        <a href="https://github.com/aleksashkaF/weather-app" target="_blank">Open-sourse code</a>
+        <a class="footer-link" href="https://github.com/aleksashkaF/weather-app" target="_blank">Open-sourse code</a>
         <span>by Oleksandra Fomina</span>
     </div>
     <script src="src/index.js"></script>

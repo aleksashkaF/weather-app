@@ -2,13 +2,16 @@
   display: block;
   margin-top: 50 auto;
   padding-top: 50px;
+  margin-bottom: 0;
 }
 .weather-app {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(0, 93, 133) 0%,
-    rgb(0, 181, 149) 90%
+  background: linear-gradient(
+    180.2deg,
+    rgb(120, 85, 137) -6.9%,
+    rgb(35, 9, 31) 76.7%
   );
+  font-family: "Indie Flower", cursive;
+  color: #d9b650;
   width: 800px;
   height: 500px;
   border-radius: 40px;
@@ -20,63 +23,68 @@
   margin: 0 auto;
   display: block;
   padding: 20px;
-  font-family: "Abel", sans-serif;
-  color: #d9b650;
 }
-.date {
-  font-size: 18px;
+.current-date {
+  font-size: 26px;
 }
+
 .fa-location-dot {
   font-size: 16px;
 }
 .location {
-  font-size: 25px;
+  font-size: 35px;
 }
 .current-forecast {
-  padding-left: 30px;
-  padding-top: 30px;
-  font-size: 30px;
-}
-.current-forecast-day-img {
-  font-size: 45px;
-}
-a {
-  text-decoration: none;
-  color: #d9b650;
-}
-a:hover {
-  color: #d9b650;
-}
-.week-forecast {
+  display: block;
+  right: -550px;
+  top: -100px;
   position: relative;
-  top: -150px;
-  left: 150px;
-  font-size: 25px;
-  font-family: "Abel", sans-serif;
+}
+.picture {
+  width: 120px;
+  height: 120px;
+}
+.current-temp-number {
+  font-size: 50px;
+}
+.temp-unit {
   color: #d9b650;
+  font-size: 30px;
+  cursor: default;
 }
-.forecast-day-img {
-  font-size: 40px;
+
+.description {
+  font-size: 24px;
 }
+.description:first-letter {
+  text-transform: capitalize;
+}
+
 .metrics {
   list-style-type: none;
   position: relative;
-  top: -150px;
+  top: -250px;
   padding-top: 20px;
-  left: -200px;
-  font-family: "Abel", sans-serif;
+  right: 20px;
+  font-family: "Indie Flower", cursive;
   color: #d9b650;
   font-size: 18px;
 }
 .location-form {
   position: relative;
   top: -150px;
-  left: 100px;
-  font-family: "Abel", sans-serif;
+  left: -200px;
+  font-family: "Indie Flower", cursive;
+  color: #d9b650;
+}
+.form-control-sm {
+  width: 20px;
 }
 .footer {
   font-family: "Abel", sans-serif;
   width: auto;
   display: block;
   margin-left: 400px;
+  
+  font-size: 18px;
 }
