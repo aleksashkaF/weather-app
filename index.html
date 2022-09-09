@@ -46,43 +46,45 @@
                 </div>
             </div>
             <div class="week-forecast" id="forecast"></div>
-        
-        <div class="row justify-content-center description">
-            <div class="col-md-auto">
-                <ul class="metrics">
-                    <li>
-                        Humidity:
-                        <span class="current-metrics" id="humidity">
-                        </span>
-                    </li>
-                    <li>
-                        Wind:
-                        <span class="current-metrics" id="wind">
-                        </span>
-                    </li>
-                </ul>
+
+            <div class="row justify-content-center description">
+                <div class="col-md-auto">
+                    <ul class="metrics">
+                        <li>
+                            Humidity:
+                            <span class="current-metrics" id="humidity">
+                            </span>
+                        </li>
+                        <li>
+                            Wind:
+                            <span class="current-metrics" id="wind">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <form class="row justify-content-center location-form" id="location-form">
+                <div class="col-4">
+                    <input type="search" class="form-control form-control-sm" id="city-input"
+                        placeholder="Change location">
+                </div>
+                <div class="col-md-auto">
+                    <button type="submit" class="btn btn-light btn-sm">Search</button>
+                    <span class="col-md-auto">
+                        <button type="click" class="btn btn-light btn-sm my-location" id="my-location">My
+                            location</button>
+                    </span>
+                </div>
+            </form>
+
+
         </div>
-        <form class="row justify-content-center location-form" id="location-form">
-            <div class="col-4">
-                <input type="search" class="form-control form-control-sm" id="city-input" placeholder="Change location">
-            </div>
-            <div class="col-md-auto">
-                <button type="submit" class="btn btn-light btn-sm">Search</button>
-                <span class="col-md-auto">
-                    <button type="click" class="btn btn-light btn-sm my-location" id="my-location">My
-                        location</button>
-                </span>
-            </div>
-        </form>
-
-
-    </div>
-    <div class="footer">
-        <a class="footer-link" href="https://github.com/aleksashkaF/weather-app" target="_blank">Open-sourse code</a>
-        <span>by Oleksandra Fomina</span>
-    </div>
-    <script src="src/index.js"></script>
+        <div class="footer">
+            <a class="footer-link" href="https://github.com/aleksashkaF/weather-app" target="_blank">Open-sourse
+                code</a>
+            <span>by Oleksandra Fomina</span>
+        </div>
+        <script src="src/index.js"></script>
 </body>
 
 </html>
