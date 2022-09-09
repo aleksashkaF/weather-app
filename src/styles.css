@@ -56,6 +56,7 @@
 
 .description {
   font-size: 28px;
+  width: 200px;
 }
 .description:first-letter {
   text-transform: capitalize;
@@ -64,7 +65,7 @@
   width: 600px;
   position: relative;
   left: 70px;
-  top: -200px;
+  top: -250px;
   font-size: 26px;
 }
 .metrics {
@@ -72,14 +73,14 @@
   position: relative;
   top: -230px;
   padding-top: 20px;
-  right: -230px;
+  right: -550px;
   font-family: "Indie Flower", cursive;
   color: #d9b650;
   font-size: 20px;
 }
 .location-form {
   position: relative;
-  top: -200px;
+  top: -250px;
   left: -125px;
   font-family: "Indie Flower", cursive;
   color: #d9b650;
